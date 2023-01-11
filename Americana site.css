@@ -1,0 +1,707 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.banner {
+width: 100%;
+height: 100vh;
+font-family: 'Montserrat', sans-serif;
+background-size: cover;
+background-position: center;
+background: url(https://static.spotapps.co/web/americanalasvegas--com/custom/reviews_back.jpg);
+}
+.logo {
+width: 200px;
+cursor: pointer;
+max-width: 100%;
+height: auto;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  padding: 50px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  background-color: #fff;
+  font-family: 'Dm serif Display', serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  top: 0;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index: 500;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+} 
+.navbar ul li a {
+  text-decoration: none;
+  color: #002e48;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.navbar ul li a:hover {
+  border: none;
+  border-right: 1px solid #002e48;
+  background-color: #fff;
+  color: #a31521;
+   cursor: pointer;
+ } 
+.red-border {
+  padding-right: 5px;
+  border-right: 1px solid red;
+}
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+    border-radius: 0;
+    display: block;
+    box-sizing: border-box;
+  }
+  #main-menu a:hover {
+border: none;
+border-right: 1px solid #002e48;
+background-color: #fff;
+color: #a31521;
+cursor: pointer;
+}
+/* start of hamburger icon style*/
+#hamburger-input {
+display: none;
+}
+#hamburger-menu {
+position: fixed;
+top: 20px;
+left: 20px;
+width: 50px;
+height: 50px;
+display: none;
+border: none;
+padding: 0px;
+margin: 0px;
+font-family: 'Cabin', Sans-serif;
+background: linear-gradient(
+  to bottom, 
+  #a31521, #a31521 20%, 
+  white 20%, white 40%, 
+  #a31521 40%, #a31521 60%, 
+  white 60%, white 80%, 
+  #a31521 80%, #a31521 100%
+);
+}
+#hamburger-menu #sidebar-menu {
+visibility: hidden;
+position: fixed;
+top: 0;
+left: -250px;
+width: 200px;
+height: 100%;
+background-color: #fff;
+transition: 0.3s;
+padding: 0px 10px;
+box-sizing: border-box;
+}
+#hamburger-menu h3 {
+color: #002e48;
+font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+padding-left: 0px;
+}
+
+#hamburger-menu li {
+list-style-type: none;
+line-height: 3rem;
+}
+
+#hamburger-menu a {
+color: #002e48;
+font-size: 1.3rem;
+text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+text-decoration: none;
+background-color: #a31521;
+}
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+visibility: visible;
+left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+visibility: visible;
+opacity: 0.4;
+}
+
+
+@media screen and (max-width: 750px) {
+#main-menu {
+display: none;
+}
+#hamburger-menu {
+display: inline;
+}
+}
+/* end of hamburger icon styling */
+.coverVideo {
+margin-top: 100px;
+width: 100%;
+margin-bottom: -5px;
+}
+.location-container {
+background-color: #a31521;
+height: 70px;
+width: 100%;
+text-align: center;
+}
+.location-container h1 {
+padding-top: 25px;
+font-size: 15px;
+font-weight: 500;
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+}
+@media (max-width: 150px) {
+  .location-container  {
+      height: 50px;
+  }
+}
+@media (max-width: 150px) {
+  .location-container h1 {
+      font-size: 10px;
+      margin: -15px auto 0;
+  }
+}
+
+.row1 {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  border: 2px solid black;
+  width: 100%;
+}
+.column1 {
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.row1 h1 {
+  padding-bottom: 0;
+  font-family: 'Dm serif Display', serif;
+  font-size: 50px;
+  margin-top: -10px;
+  margin-bottom: -5px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.about-us-text {
+  background-color: rgb(207, 225, 240);
+  height: 300px;
+  padding-top: 50px;
+  text-align: center;
+}
+.text-wrapper {
+  background-color: rgb(207, 225, 240);
+}
+.about-us-text p {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+.button {
+  border: none;
+  color: #002e48;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1px auto;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: #002e48; 
+  color: #fff; 
+  border: none;
+}
+.button1:hover {
+  background-color: #a31521;
+  color: #fff;
+}
+@media (max-width: 750px) {
+  .row1 {
+      flex-direction: column;
+  }
+    }
+@media (max-width: 750px) {
+.column1 {
+width: 100%;
+}
+  }
+
+.row2 {
+display: flex;
+margin: 0;
+flex-wrap: wrap;
+width: 100%;
+  }
+.cater-text {
+  height: 300px;
+  margin: 100px auto;
+  text-align: center;
+}
+.row2 h1 {
+  padding-bottom: 0;
+    font-family: 'Dm serif Display', serif;
+    font-size: 3.6em;
+    margin-top: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+.cater-text h2 {
+  font-family: 'parisienne', cursive;
+  text-transform: none;
+
+}
+.cater-text p {
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px auto;
+}
+.column2 {
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.button2 {
+  background-color: #a31521; 
+  color: #fff; 
+  border: none;
+  margin: 50px auto;
+}
+.button2:hover {
+  background-color: #002e48;
+  color: #fff;
+}
+@media (max-width: 750px) {
+.row2 {
+      flex-direction: column;
+  }
+    }
+@media (max-width: 750px) {
+.column2 {
+width: 100%;
+}
+  }
+@media (max-width: 750px) {
+.cater-text h1 {
+font-size: 2.6em;
+}
+}
+
+  .row3 {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .column3 {
+    width: 50%;
+    display: block;
+    text-align: center;
+  }
+  .row3 h1 {
+    padding-bottom: 0;
+    font-family: 'Dm serif Display', serif;
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+  }
+  .party-text {
+    height: 300px;
+    padding-top: 50px;
+    text-align: center;
+  }
+  .party-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .button {
+    border: none;
+    color: #002e48;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: #002e48; 
+    color: #fff; 
+    border: none;
+  }
+  .button1:hover {
+    background-color: #a31521;
+    color: #fff;
+  }
+  @media (max-width: 750px) {
+    .row3 {
+        flex-direction: column;
+    }
+      }
+  @media (max-width: 750px) {
+  .column3 {
+  width: 100%;
+  }
+    }
+
+.reservation-container {
+      background-color: #002e48;
+      width: 100%;
+      height: 400px;
+      margin: 0;
+    }
+.reservation-text  {
+      height: 300px;
+      width: 100%;
+      padding-top: 80px;
+      color: #fff;
+    
+    }
+.reservation-text h1 {
+      text-transform: uppercase;
+      font-size: 55px;
+      text-align: center;
+      font-family: 'Dm serif Display', serif;
+    }
+.reservation-text p {
+      margin-top: 30px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      font-size: 15px;
+    } 
+.reservation-form {
+      margin-top: -70px;
+      margin-left: -50px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+/* .reservation-form form {
+      padding: 100px auto;
+}
+@media (max-width: 750px) {
+  .reservation-form {
+  flex-direction: column;
+}
+} */
+@media (max-width: 750px) {
+.reservation-text h1 {
+font-size: 25px;
+}
+}
+@media (max-width: 750px) {
+.reservation-container {
+height: 300px;
+width: 100%;
+  }
+    }
+@media (max-width: 750px) {
+.reservation-text p {
+font-size: 10px;
+  }
+    }
+.submit-reservations {
+      width: 200px;
+      height: 52px;
+      cursor: pointer;
+      margin-left: -9px;
+      border-radius: 0 2px 2px 0;
+      background-color: #e15b64;
+      color: #fff;
+      border: none;
+      line-height: 20px;
+      font-size: 16px;
+    } 
+.gallery-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+.gallery-container img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+}
+.reviews-wrapper {
+width: 100%;
+height: auto;
+text-align: center;
+margin: 0;
+}
+.reviews-header {
+margin-top: 45px;
+margin-bottom: 10px;
+font-size: 35px;
+text-transform: uppercase;
+font-weight: 500;
+line-height: 1.1;
+color: black;
+font-family: 'DM Serif Display', serif;
+}
+@media (max-width: 750px) {
+.reviews-header  {
+    font-size: 25px;
+  }
+  }
+.faa,.fa-star {
+color: #a31521;
+padding: 0 3px;
+margin: 0 auto;
+    }
+.faa {
+display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+    } 
+
+.item h2 {
+      font-family: 'Parisienne', cursive;
+    }
+.newsletter-wrapper {
+background-color: #c1d0db;
+width: 100%;
+height: auto;
+text-align: center;
+margin: 0;
+}
+@media (max-width: 750px) {
+.newsletter-wrapper {
+width: 100%;
+}
+}
+@media (max-width: 750px) {
+.newsletter-content h1 {
+  font-size: 30px;
+}
+}
+@media (max-width: 750px) {
+.newsletter-content h2 {
+font-size: 15px;
+}
+}
+@media (max-width: 750px) {
+.email-form h2 {
+    font-size: 10px;
+  }
+}
+
+.newsletter-content {
+      width: 100%;
+      text-align: center;
+      padding: 10px 60px 30px 30px;
+}
+.section-header {
+      display: block;
+      font-family: 'DM Serif Display', serif;
+      font-size: 70px;
+      font-weight: 500;
+      margin-top: 45px;
+      color: black;
+      text-align: center;
+      text-transform: uppercase;
+    }
+.newsletter-content h2 {
+      display: block;
+      margin-top: 20px;
+      color: cadetblue;
+      font-family: 'Parisienne', cursive;
+}
+.email-subscription .email-form {
+      display: block;
+      text-align: center;
+      margin: 15px auto;
+      padding: 50px 20px;
+    }
+.email-subscription .email-form .email-input {
+  display: block;    
+  margin: 10px auto;
+  padding: 10.5px 55px 10px 5px;
+        color: #000;
+      border-bottom: 2px solid #000;
+      background-color: transparent;
+    }
+.email-submit-button {
+      display: block;
+      color: #fff;
+      background-color: #a31521;
+      border: none;
+      margin: 30px auto;
+      width: 150px;
+      padding: 10px 30px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: 'DM Serif Display', serif;
+      cursor: pointer;
+}
+.email-submit-button:hover {
+       color: #fff;
+       background-color: #002e48;
+    }
+.email-subscription > .email-form > input {
+      border: none;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+    }
+  
+.container-wrapper {
+      width: 100%;
+      margin-top: -20px;
+      background-color: #a31521;
+      color: #fff;
+      text-align: left;
+      padding-bottom: 40px;
+      padding-top: 60px;
+      font-family: 'Montserrat', sans-serif;
+      background-size: cover;
+      background-position: center center;
+    }
+.row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      height: 300px;
+      margin: 0;
+    }
+.contact-location p {
+      font-family: 'Montserrat', sans-serif;
+      margin: 1px auto;
+      font-size: 16px;
+    }
+.hours-title h1 {
+     font-family: 'DM Serif Display', serif; 
+     text-transform: uppercase; 
+     font-size: 30px;
+    }
+.hours p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      margin: 5px 0;
+      line-height: 1.1em;
+    }
+.social-title {
+      text-transform: uppercase;
+      font-family: 'DM Serif Display', serif;
+      font-size: 20px;
+    }
+.socialnav,.contact-icon:hover {
+      background-color: #fff;
+      color: #a31521;
+    }
+.yelp-icon:hover {
+      color: #a31521;
+    }
+.socialnav,.contact-icon {
+      display: inline-block;
+        width: 50px;
+        height: 32px;
+        text-align: center;
+        color: #fff;
+        background-color: transparent;
+    }
+.contact-us {
+  margin-top: 50px;
+}
+.contact-us p {
+  text-align: center;
+  margin: 20px auto;
+}
+.contact-us-title h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 27px;
+      text-transform: uppercase;
+    }  
+@media (max-width: 750px) {
+.row {
+flex-direction: column;
+text-align: center;
+height: 500px;
+font-size: 20px;
+margin: 10px auto;
+}
+}
+.powered-footer-wrapper {
+  width: 100%;
+  margin: 0;
+  background-color: rgb(0, 46, 72);
+  border-top: 2px solid rgb(255, 255, 255);
+  text-align: center;
+  color: #fff;
+  padding: 30px 10px 35px;
+}
+.powered-container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.powered-by-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.applicationsLink {
+  color: #fff;
+  font-size: 18px;
+}
+.applicationsLink:hover {
+  color: rgb(233, 110, 65);
+}
+.powered-container img {
+  height: 25px;
+}
+#accessible-footer {
+  position: relative;
+  padding: 20px 5px;
+  background-color: #353638;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+#accessible-footer p {
+  margin: 0 auto;
+  padding: 0;
+  font-family: inherit;
+  font-size: initial;
+  color: #fff;
+}
+.accessible-footer-link {
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 600;
+}
